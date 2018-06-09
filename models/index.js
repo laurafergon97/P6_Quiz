@@ -24,7 +24,6 @@ sequelize.import(path.join(__dirname,'user'));
 
 // Session
 sequelize.import(path.join(__dirname,'session'));
-
 sequelize.sync()
     .then(()=>
     sequelize.models.quiz.count()
